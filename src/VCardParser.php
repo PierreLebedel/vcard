@@ -243,6 +243,9 @@ class VCardParser implements Iterator
                     case 'ORG':
                         $cardData->organization = $value;
                         break;
+                    case 'UID':
+                        $cardData->uid = $value;
+                        break;
                     case 'URL':
                         if (!isset($cardData->url)) {
                             $cardData->url = [];
